@@ -103,7 +103,7 @@ public class SellerDaoJDBC implements SellerDao{
 			if (row == 0) {
 				throw new DbException("Unexpected error! This id doest exist");
 			}
-			}
+		}
 		catch (SQLException e) {
 			throw new DbException(e.getMessage());
 		}
