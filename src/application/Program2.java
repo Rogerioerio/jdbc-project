@@ -21,6 +21,11 @@ public class Program2 {
 			System.out.println(obj);
 		}
 		
+		System.out.println("---Test 2: department insert");		
+		Department newDep = new Department(null, "Secretary");
+		departmentDao.insert(newDep);
+		System.out.println("Inserted! New id = " + newDep.getId());		
+		
 	}
 
 }
